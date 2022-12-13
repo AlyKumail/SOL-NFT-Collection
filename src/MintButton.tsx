@@ -14,14 +14,19 @@ import {
 import { CIVIC_GATEKEEPER_NETWORK } from "./utils";
 
 export const CTAButton = styled(Button)`
-  width: 100%;
-  height: 60px;
+  /* width: 215px;
+  height: 56px; */
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
-  color: white;
-  font-size: 16px;
+  background: linear-gradient(180deg, #030303 0%, #030303 100%);
+  color: #fcfcfc;
+
   font-weight: bold;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.15rem;
+  padding: 1em 2em;
 `; // add your own styles here
 
 export const MintButton = ({
@@ -57,7 +62,7 @@ export const MintButton = ({
       return "WHITELIST MINT";
     }
 
-    return "MINT";
+    return "MINT NOW";
   };
 
   useEffect(() => {

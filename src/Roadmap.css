@@ -1,0 +1,134 @@
+.roadmap-container {
+  margin: 5rem 0;
+}
+.roadmap-container h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  /* Text color */
+  color: #030303;
+  margin-bottom: 3rem;
+}
+.roadmap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem auto;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 60px;
+  background: #030303;
+
+  position: absolute;
+}
+.dot-top {
+  top: 0;
+  left: 50%;
+  transform: translate(-44%, -100%);
+}
+.dot-bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-44%, 100%);
+}
+.roadmap-left {
+  /* border-right: 1px solid #030303; */
+  width: 50%;
+}
+.roadmap-right {
+  width: 50%;
+  border-left: 2.5px solid #030303;
+}
+
+.roadmap-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem auto;
+}
+.roadmap-item-rev {
+  flex-direction: row-reverse;
+}
+.roadmap-item-data {
+  width: 65%;
+
+  background: #ebebeb;
+  padding: 1rem 2.1rem;
+}
+.roadmap-item-dir {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.padding-t2 {
+  padding-top: 2.5rem;
+}
+.padding-b2 {
+  padding-bottom: 2.5rem;
+}
+.roadmap-item-data p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+
+  /* Text color */
+
+  color: #030303;
+
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.roadmap-item-data p img {
+  margin-right: 1.15rem;
+}
+
+.roadmap-item-dir p {
+  font-family: "Crucial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  /* Gray */
+  color: #848484;
+
+  transform: translateY(-80%);
+}
+.roadmap-item-dir img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .roadmap-item {
+    flex-direction: column-reverse;
+  }
+  .roadmap-item-data p img {
+    width: 12px;
+    /* height: 5px; */
+  }
+  .roadmap-item-data {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+  }
+  .roadmap-item-dir {
+    width: 100%;
+    text-align: center;
+  }
+  .roadmap-item-data p {
+    font-size: 19px;
+  }
+}

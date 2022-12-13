@@ -1,0 +1,84 @@
+.hero-container {
+  margin-bottom: 4.85rem;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+h3 {
+  text-align: center;
+}
+.hero-left {
+  width: 60%;
+}
+.hero-right {
+  width: 40%;
+  display: flex;
+}
+.hero-right img {
+  max-width: 100%;
+}
+.hero-left h2 {
+  font-family: "Crucial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 1.4rem;
+  margin-top: 1rem;
+  /* Text color */
+  position: relative;
+  color: #030303;
+  z-index: 1;
+}
+.purpUnderline {
+  font-family: "Crucial";
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.purpUnderline::after {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: -1;
+  background-color: #6750a3;
+  position: absolute;
+}
+
+.hero-left p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  /* or 200% */
+
+  /* Text color */
+
+  color: #030303;
+}
+.circleBg {
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hero-right {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+  }
+}

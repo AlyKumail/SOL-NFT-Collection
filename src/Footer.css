@@ -1,0 +1,23 @@
+.footer-container {
+  margin: 2.5rem 0;
+}
+.footer .navlinks {
+  display: flex;
+  flex-direction: column;
+}
+.footer .navlinks li {
+  margin: 0.3rem 0;
+}
+.footer .navlinks li a {
+  text-decoration: underline;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+}

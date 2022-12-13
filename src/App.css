@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Crucial"; /*Can be any text*/
+  src: local("CrucialMedium"),
+    url("./fonts/CrucialMedium.otf") format("opentype");
+}
+
 .App {
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.MainContainer {
+  width: 86%;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h2 {
+  font-family: "Crucial", "Times New Roman", Times, serif !important;
 }

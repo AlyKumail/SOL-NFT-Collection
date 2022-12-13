@@ -2,9 +2,17 @@ import "./App.css";
 import { useMemo } from "react";
 import * as anchor from "@project-serum/anchor";
 import Home from "./Home";
+import Nav from "./Nav";
+import Hero from "./Hero";
+import Roadmap from "./Roadmap";
+import Team from "./Team";
+import Footer from "./Footer";
 import { DEFAULT_TIMEOUT } from "./connection";
 import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+
+//font
+import "./fonts/CrucialMedium.otf";
 
 import {
   ConnectionProvider,
@@ -72,6 +80,9 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletDialogProvider>
+            {console.log(candyMachineId, rpcHost, network, connection)}
+            <Nav></Nav>
+            <Hero></Hero>
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
@@ -80,6 +91,9 @@ const App = () => {
               network={network}
               error={error}
             />
+            <Roadmap></Roadmap>
+            <Team></Team>
+            <Footer></Footer>
           </WalletDialogProvider>
         </WalletProvider>
       </ConnectionProvider>
