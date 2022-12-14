@@ -112,6 +112,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .roadmap-container {
+    margin: 3rem 0;
+  }
   .roadmap-item {
     flex-direction: column-reverse;
   }
@@ -129,6 +132,6 @@
     text-align: center;
   }
   .roadmap-item-data p {
-    font-size: 19px;
+    font-size: 1rem;
   }
 }

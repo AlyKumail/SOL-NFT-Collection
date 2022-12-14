@@ -31,7 +31,7 @@ import { MintButton } from "./MintButton";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { SolanaMobileWalletAdapterWalletName } from "@solana-mobile/wallet-adapter-mobile";
-import heroimg from "./img/heroimg.png";
+import heroimg from "./img/TMLmintPic.png";
 
 const ConnectButton = styled(WalletDialogButton)`
   min-width: 215px;
@@ -41,12 +41,17 @@ const ConnectButton = styled(WalletDialogButton)`
   margin-bottom: 5px;
   background: linear-gradient(180deg, #030303 0%, #030303 100%);
   color: #fcfcfc;
-  font-size: 16px;
+
   font-weight: bold;
   font-family: "Montserrat";
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   padding: 1em 2em;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    min-width: 200px;
+    margin-top: 0px;
+  }
 `;
 
 const MintContainer = styled.div``; // add your owns styles here
@@ -430,29 +435,6 @@ const Home = (props: HomeProps) => {
     }
   };
 
-  // const toggleMintButton = () => {
-  //   let active = !isActive || isPresale;
-
-  //   if (active) {
-  //     if (candyMachine!.state.isWhitelistOnly && !isWhitelistUser) {
-  //       active = false;
-  //     }
-  //     if (endDate && Date.now() >= endDate.getTime()) {
-  //       active = false;
-  //     }
-  //   }
-
-  //   if (
-  //     isPresale &&
-  //     candyMachine!.state.goLiveDate &&
-  //     candyMachine!.state.goLiveDate.toNumber() <= new Date().getTime() / 1000
-  //   ) {
-  //     setIsPresale((candyMachine!.state.isPresale = false));
-  //   }
-
-  //   setIsActive((candyMachine!.state.isActive = active));
-  // };
-
   useEffect(() => {
     refreshCandyMachineState();
   }, [
@@ -482,6 +464,9 @@ const Home = (props: HomeProps) => {
     color: #030303;
     margin-bottom: 3rem;
     margin-top: 7.5rem;
+    @media (max-width: 768px) {
+      margin-top: 5rem;
+    }
   `;
 
   const MintSection = styled("div")`
@@ -495,7 +480,7 @@ const Home = (props: HomeProps) => {
   const MintSectionLeft = styled("div")`
     width: 42%;
     @media (max-width: 768px) {
-      width: 55%;
+      width: 80%;
 
       margin: 0 auto;
     }
@@ -516,7 +501,7 @@ const Home = (props: HomeProps) => {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 40px;
     /* or 167% */
 
@@ -525,6 +510,9 @@ const Home = (props: HomeProps) => {
     color: #030303;
     margin-top: 3rem;
     margin-bottom: 2.35rem;
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
   `;
 
   return (
@@ -547,13 +535,6 @@ const Home = (props: HomeProps) => {
           padding: "0",
         }}
       >
-        {/* <Paper
-          style={{
-            paddingBottom: 10,
-            backgroundColor: "#151A1F",
-            borderRadius: 6,
-          }}
-        > */}
         <SectionHeading id="mint">Mint</SectionHeading>
         <MintSection>
           <MintSectionLeft>
@@ -581,6 +562,13 @@ const Home = (props: HomeProps) => {
             ) : (
               <>
                 <MintContainer>
+                  {console.log(
+                    "MintContainer:" +
+                      candyMachine?.state.isActive +
+                      candyMachine?.state.gatekeeper +
+                      publicKey +
+                      anchorWallet?.signTransaction
+                  )}
                   {candyMachine?.state.isActive &&
                   candyMachine?.state.gatekeeper &&
                   publicKey &&
@@ -611,19 +599,6 @@ const Home = (props: HomeProps) => {
                     </GatewayProvider>
                   ) : (
                     <>
-                      {console.log("--------------ELSE------------")}
-                      {console.log(
-                        "--------------isWhitelistUser:------------" +
-                          isWhitelistUser
-                      )}
-                      {console.log(
-                        "--------------isValidBalance:------------" +
-                          isValidBalance
-                      )}
-                      {console.log(
-                        "--------------isActive:------------" + isActive
-                      )}
-
                       <MintButton
                         candyMachine={candyMachine}
                         isMinting={isUserMinting}
@@ -641,8 +616,6 @@ const Home = (props: HomeProps) => {
             )}
           </MintSectionRight>
         </MintSection>
-
-        {/* </Paper> */}
       </Container>
 
       <Snackbar
@@ -662,24 +635,5 @@ const Home = (props: HomeProps) => {
     </Container>
   );
 };
-
-// const getCountdownDate = (
-//   candyMachine: CandyMachineAccount
-// ): Date | undefined => {
-//   if (
-//     candyMachine.state.isActive &&
-//     candyMachine.state.endSettings?.endSettingType.date
-//   ) {
-//     return toDate(candyMachine.state.endSettings.number);
-//   }
-
-//   return toDate(
-//     candyMachine.state.goLiveDate
-//       ? candyMachine.state.goLiveDate
-//       : candyMachine.state.isPresale
-//       ? new anchor.BN(new Date().getTime() / 1000)
-//       : undefined
-//   );
-// };
 
 export default Home;

@@ -20,13 +20,16 @@ export const CTAButton = styled(Button)`
   margin-top: 10px;
   margin-bottom: 5px;
   background: linear-gradient(180deg, #030303 0%, #030303 100%);
-  color: #fcfcfc;
+  color: #000000;
 
   font-weight: bold;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.15rem;
   padding: 1em 2em;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `; // add your own styles here
 
 export const MintButton = ({

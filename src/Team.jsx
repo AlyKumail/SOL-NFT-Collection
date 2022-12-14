@@ -1,5 +1,5 @@
 import "./Team.css";
-import team1 from "./img/team1.png";
+import team1 from "./img/TCMteamPic.png";
 
 const Team = () => {
   return (

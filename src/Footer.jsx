@@ -1,6 +1,7 @@
 import "./Footer.css";
 import Twitter from "./img/Twitter.png";
 import Discord from "./img/Discord.png";
+import copyright from "./img/copyright.png";
 
 const Footer = () => {
   return (
@@ -21,7 +22,10 @@ const Footer = () => {
           </li>
         </ul>
 
-        <p>2023. All Rights Reserved</p>
+        <p>
+          {" "}
+          <img src={copyright} alt="" /> 2023. All Rights Reserved
+        </p>
 
         <div className="navbar_social-links">
           <a href="https://twitter.com/TheMotiLeo">

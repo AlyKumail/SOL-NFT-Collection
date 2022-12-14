@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroimg from "./img/heroimg.png";
+import heroimg from "./img/TMLheroPic.png";
 import vidgame from "./img/vidgame.png";
 import Mouse from "./img/Mouse.png";
 
