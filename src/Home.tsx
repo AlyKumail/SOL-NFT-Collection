@@ -542,7 +542,7 @@ const Home = (props: HomeProps) => {
           </MintSectionLeft>
           <MintSectionRight>
             <MintPara>
-              The Motivational Leopard is a collcection of 10,000 unique digital
+              The Motivational Leopard is a collection of 10,000 unique digital
               collectibles living on the solana blockchain and comes with
               multiples utilities mentioned above.
             </MintPara>
