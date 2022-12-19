@@ -20,7 +20,7 @@ export const CTAButton = styled(Button)`
   margin-top: 10px;
   margin-bottom: 5px;
   background: linear-gradient(180deg, #030303 0%, #030303 100%);
-  color: #000000;
+  color: #fff;
 
   font-weight: bold;
   font-family: "Montserrat";
