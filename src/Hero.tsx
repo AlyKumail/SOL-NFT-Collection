@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroimg from "./img/TMLheroPic.png";
+import heroimg from "./img/TCMheroPic.png";
 import vidgame from "./img/vidgame.png";
 import Mouse from "./img/Mouse.png";
 
@@ -18,6 +18,7 @@ const Hero = () => {
           </p>
           <p>3. Royalty paid back to holders</p>
           <p>4. Merch store and many more</p>
+          <p>5. Deflationary Collection.</p>
         </div>
         <div
           //   style={{ background: `url(${circle}) no-repeat` }}

@@ -31,7 +31,7 @@ import { MintButton } from "./MintButton";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { SolanaMobileWalletAdapterWalletName } from "@solana-mobile/wallet-adapter-mobile";
-import heroimg from "./img/TMLmintPic.png";
+import heroimg from "./img/TCMmintPic.png";
 
 const ConnectButton = styled(WalletDialogButton)`
   min-width: 215px;
@@ -542,9 +542,11 @@ const Home = (props: HomeProps) => {
           </MintSectionLeft>
           <MintSectionRight>
             <MintPara>
-              The Motivational Leopard is a collection of 10,000 unique digital
+              The Motivational Leopard is a collcection of 10,000 unique digital
               collectibles living on the solana blockchain and comes with
-              multiples utilities mentioned above.
+              multiples utilities mentioned above. Royalties will be used to buy
+              NFTs and burn it from collection which makes it Scary &
+              Deflationary.
             </MintPara>
             {!connected ? (
               <ConnectButton

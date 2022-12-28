@@ -91,6 +91,28 @@ const Roadmap = () => {
         </div>
         <span className="dot dot-bottom "></span>
       </div>
+
+      <div className="MainContainer roadmap">
+        <div className="roadmap-left padding-t2">
+          <div className="roadmap-item">
+            <div className="roadmap-item-data">
+              <p>
+                {" "}
+                <img src={rightArrow} alt="" />{" "}
+                <span>
+                  Deflationary Collection: Every 6 months, the royalties
+                  collected will be used to buy NFTs and burn it.
+                </span>
+              </p>
+            </div>
+            <div className="roadmap-item-dir">
+              <p>Phase 5</p>
+              <img src={leftArrow} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="roadmap-right"></div>
+      </div>
     </div>
   );
 };
