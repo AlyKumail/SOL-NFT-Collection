@@ -1,0 +1,45 @@
+.faq-container{
+  margin-bottom: 7rem;
+}
+.faq-container h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    /* Text color */
+    color: #030303;
+    margin-bottom: 3rem;
+  }
+  .faq-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+ 
+  .faq-item-text p{
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 44px;
+  /* or 183% */
+
+
+  /* Text color */
+
+  color: #030303;
+  }
+  .question{
+    font-weight: 600 !important;
+    margin-bottom: .5rem;
+    /* margin-top: 1.5rem; */
+  }
+  .faqDot{
+    margin-left: 2.85rem;
+    margin-right: .5rem;
+  }
+  .faq-question{
+    margin-top: 2.2rem;
+  }

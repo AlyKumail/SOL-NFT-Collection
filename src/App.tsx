@@ -6,6 +6,8 @@ import Nav from "./Nav";
 import Hero from "./Hero";
 import Roadmap from "./Roadmap";
 import Team from "./Team";
+import About from "./About";
+import Faq from "./Faq";
 import Footer from "./Footer";
 import { DEFAULT_TIMEOUT } from "./connection";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -83,6 +85,7 @@ const App = () => {
             {console.log(candyMachineId, rpcHost, network, connection)}
             <Nav></Nav>
             <Hero></Hero>
+            <About></About>
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
@@ -93,6 +96,7 @@ const App = () => {
             />
             <Roadmap></Roadmap>
             <Team></Team>
+            <Faq></Faq>
             <Footer></Footer>
           </WalletDialogProvider>
         </WalletProvider>

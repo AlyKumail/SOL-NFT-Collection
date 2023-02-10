@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Twitter from "./img/Twitter.png";
+import insta from "./img/insta.png";
 import Discord from "./img/Discord.png";
 import copyright from "./img/copyright.png";
 
@@ -18,7 +18,13 @@ const Footer = () => {
             <a href="#roadmap">Roadmap</a>
           </li>
           <li>
+            <a href="#roadmap">Whitepaper</a>
+          </li>
+          <li>
             <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#faq">Faq</a>
           </li>
         </ul>
 
@@ -28,8 +34,8 @@ const Footer = () => {
         </p>
 
         <div className="navbar_social-links">
-          <a href="https://twitter.com/TheMotiLeo">
-            <img src={Twitter} alt="" />
+          <a href="https://instagram.com/themotivationalleopard?igshid=ZDdkNTZiNTM= ">
+            <img src={insta} alt="" />
           </a>
           <a href="https://discord.gg/vbKjBCxkbN">
             <img src={Discord} alt="" />

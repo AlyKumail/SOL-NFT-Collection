@@ -62,6 +62,9 @@ h3 {
 
   color: #030303;
 }
+.hero-left p img{
+  margin-left: -0.5rem;
+}
 .circleBg {
   /* margin: 0 auto; */
   margin-left: auto;

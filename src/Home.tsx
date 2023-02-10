@@ -31,7 +31,7 @@ import { MintButton } from "./MintButton";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { SolanaMobileWalletAdapterWalletName } from "@solana-mobile/wallet-adapter-mobile";
-import heroimg from "./img/TCMmintPic.png";
+import heroimg from "./img/TCMmintPic1.png";
 
 const ConnectButton = styled(WalletDialogButton)`
   min-width: 215px;
@@ -477,43 +477,44 @@ const Home = (props: HomeProps) => {
     }
   `;
 
-  const MintSectionLeft = styled("div")`
-    width: 42%;
-    @media (max-width: 768px) {
-      width: 80%;
+  // const MintSectionLeft = styled("div")`
+  //   width: 42%;
+  //   @media (max-width: 768px) {
+  //     width: 80%;
 
-      margin: 0 auto;
-    }
-  `;
+  //     margin: 0 auto;
+  //   }
+  // `;
 
   const MintSectionRight = styled("div")`
-    width: 58%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-contents: center;
     @media (max-width: 768px) {
       width: 80%;
       margin: 0 auto;
     }
   `;
 
-  const MintPara = styled("p")`
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 40px;
-    /* or 167% */
+  // const MintPara = styled("p")`
+  //   font-family: "Montserrat";
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 1.5rem;
+  //   line-height: 40px;
+  //   /* or 167% */
 
-    /* Text color */
+  //   /* Text color */
 
-    color: #030303;
-    margin-top: 3rem;
-    margin-bottom: 2.35rem;
-    @media (max-width: 768px) {
-      font-size: 1.3rem;
-    }
-  `;
+  //   color: #030303;
+  //   margin-top: 3rem;
+  //   margin-bottom: 2.35rem;
+  //   @media (max-width: 768px) {
+  //     font-size: 1.3rem;
+  //   }
+  // `;
 
   return (
     <Container
@@ -537,17 +538,9 @@ const Home = (props: HomeProps) => {
       >
         <SectionHeading id="mint">Mint</SectionHeading>
         <MintSection>
-          <MintSectionLeft>
-            <img src={heroimg} alt="" />
-          </MintSectionLeft>
           <MintSectionRight>
-            <MintPara>
-              The Motivational Leopard is a collcection of 10,000 unique digital
-              collectibles living on the solana blockchain and comes with
-              multiples utilities mentioned above. Royalties will be used to buy
-              NFTs and burn it from collection which makes it Scary &
-              Deflationary.
-            </MintPara>
+          <img style={{marginBottom: '5rem'}} src={heroimg} alt="" />
+            
             {!connected ? (
               <ConnectButton
                 onClick={(e) => {

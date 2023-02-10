@@ -14,13 +14,9 @@ const Roadmap = () => {
             <div className="roadmap-item-data">
               <p>
                 {" "}
-                <img src={rightArrow} alt="" /> <span>Mint 10,000 Leos.</span>
+                <img src={rightArrow} alt="" /> <span>Mint 10,000 Leos (Iphone 14, Iphone 14 Pro, Apple Macbook Air, Apple Watch Series 4, Apple Ipad 9th Gen) giveaways.</span>
               </p>
-              <p>
-                {" "}
-                <img src={rightArrow} alt="" />{" "}
-                <span>Rarity Ranks of collection will be revealed.</span>
-              </p>
+              
             </div>
             <div className="roadmap-item-dir">
               <p>Phase 1</p>
@@ -100,8 +96,7 @@ const Roadmap = () => {
                 {" "}
                 <img src={rightArrow} alt="" />{" "}
                 <span>
-                  Deflationary Collection: Every 6 months, the royalties
-                  collected will be used to buy NFTs and burn it.
+                Deflationary Collection: Every 6 months, the royalties collected will be used to buy NFTs and burn it (from secondary marketplaces to increase value and the ROI of our investors).
                 </span>
               </p>
             </div>
