@@ -23,7 +23,7 @@ const Faq = () => {
                         <img className="faqDot" src={faqDot} alt="" />
                     </div>
                     <div className="faq-item-text">
-                        <p className="">Owing The Motivational Leopard NFT automatically makes you a member of the community. Minting date to be announced soon on social media. Stay tuned.</p>
+                        <p className="">Owing The Motivational Leopard NFT automatically makes you a member of the community.</p>
                     </div>
                 </div>
 

@@ -39,7 +39,7 @@ const Roadmap = () => {
               <p>
                 {" "}
                 <img src={rightArrow} alt="" />{" "}
-                <span>Royalty upto 30% gets paid back.</span>
+                <span>Royalty upto 50% gets paid back.</span>
               </p>
             </div>
             <div className="roadmap-item-dir">
