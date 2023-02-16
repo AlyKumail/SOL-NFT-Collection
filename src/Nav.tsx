@@ -31,7 +31,7 @@ const Nav = () => {
         </ul>
 
         <div className="navbar_social-links">
-          <a href="https://instagram.com/themotivationalleopardnft?igshid=ZDdkNTZiNTM=">
+          <a href="https://www.instagram.com/themotivationalleopardnft/?igshid=ZDdkNTZiNTMp">
             <img src={insta} alt="" />
           </a>
           <a href="https://discord.gg/vbKjBCxkbN">

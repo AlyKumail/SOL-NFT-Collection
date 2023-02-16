@@ -34,7 +34,7 @@ const Footer = () => {
         </p>
 
         <div className="navbar_social-links">
-          <a href="https://instagram.com/themotivationalleopard?igshid=ZDdkNTZiNTM= ">
+          <a href="https://www.instagram.com/themotivationalleopardnft/?igshid=ZDdkNTZiNTMp">
             <img src={insta} alt="" />
           </a>
           <a href="https://discord.gg/vbKjBCxkbN">
