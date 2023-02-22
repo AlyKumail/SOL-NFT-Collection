@@ -3,6 +3,7 @@ import logo from "./img/logo.png";
 // import Twitter from "./img/Twitter.png";
 import insta from "./img/insta.png";
 import Discord from "./img/Discord.png";
+import Twitter from "./img/Twitter.png";
 
 const Nav = () => {
   return (
@@ -31,6 +32,9 @@ const Nav = () => {
         </ul>
 
         <div className="navbar_social-links">
+          <a href="https://twitter.com/TheLeosNft?t=K6LmNQwKMyXng2VzZz537A&s=09">
+            <img src={Twitter} alt="" />
+          </a>
           <a href="https://www.instagram.com/themotivationalleopardnft/">
             <img src={insta} alt="" />
           </a>

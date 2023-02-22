@@ -1,6 +1,7 @@
 import "./Footer.css";
 import insta from "./img/insta.png";
 import Discord from "./img/Discord.png";
+import Twitter from "./img/Twitter.png";
 import copyright from "./img/copyright.png";
 
 const Footer = () => {
@@ -34,6 +35,9 @@ const Footer = () => {
         </p>
 
         <div className="navbar_social-links">
+          <a href="https://twitter.com/TheLeosNft?t=K6LmNQwKMyXng2VzZz537A&s=09">
+            <img src={Twitter} alt="" />
+          </a>
           <a href="https://www.instagram.com/themotivationalleopardnft/">
             <img src={insta} alt="" />
           </a>
