@@ -38,7 +38,7 @@ const Nav = () => {
           <a href="https://www.instagram.com/themotivationalleopardnft/">
             <img src={insta} alt="" />
           </a>
-          <a href="https://discord.gg/vbKjBCxkbN">
+          <a href=" https://discord.gg/qYPrE9gpSh">
             <img src={Discord} alt="" />
           </a>
         </div>
