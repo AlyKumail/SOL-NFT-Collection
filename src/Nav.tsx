@@ -1,7 +1,5 @@
 import "./Nav.css";
 import logo from "./img/logo.png";
-// import Twitter from "./img/Twitter.png";
-import insta from "./img/insta.png";
 import Discord from "./img/Discord.png";
 import Twitter from "./img/Twitter.png";
 
@@ -35,9 +33,7 @@ const Nav = () => {
           <a href="https://twitter.com/TheLeosNft?t=K6LmNQwKMyXng2VzZz537A&s=09">
             <img src={Twitter} alt="" />
           </a>
-          <a href="https://www.instagram.com/themotivationalleopardnft/">
-            <img src={insta} alt="" />
-          </a>
+          
           <a href=" https://discord.gg/qYPrE9gpSh">
             <img src={Discord} alt="" />
           </a>
